@@ -1,0 +1,172 @@
+@font-face {
+    font-family: 'Arimo-Regular';
+    src: url('ArimoRegular.eot');
+    src: url('ArimoRegular.eot') format('embedded-opentype'),
+         url('ArimoRegular.woff2') format('woff2'),
+         url('ArimoRegular.woff') format('woff'),
+         url('ArimoRegular.ttf') format('truetype'),
+         url('ArimoRegular.svg#ArimoRegular') format('svg');
+}
+html, body {
+  width: 100%;
+  height: 100%;
+}
+
+html {
+  display: table;
+  font-family: Arimo-Regular;
+}
+
+body {
+  display: table-cell;
+  text-align: center;
+}
+
+canvas {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left:0;
+  top:0;
+  z-index: -1;
+  background-color: #ededed;
+  background: linear-gradient(0deg, rgba(255,255,255,1) 50%, rgba(237,237,237,1) 80%);
+}
+
+h1 {
+  font-size: 4em;
+  font-weight: normal;
+  text-transform: lowercase;
+  color: #445c62;
+}
+
+svg {
+  width: 40%;
+  height: 40%;
+}
+
+.marquee {
+  margin-top: 11px;
+  height: 100px;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.marquee div {
+  display: block;
+  width: 200%;
+  height: 200px;
+  position: absolute;
+  overflow: hidden;
+  animation: marquee 25s linear infinite;
+}
+
+.marquee span {
+  float: left;
+  width: 50%;
+}
+
+@keyframes marquee {
+  0% { left: 0; }
+  100% { left: -100%; }
+}
+
+.powered_by {
+  font-size: xx-large;
+  color: grey;
+  margin-top: 0px;
+  margin-bottom: 11px;
+}
+
+.media_buttons {
+  margin-top: 44px;
+  justify-content: center;
+}
+
+#buttons {
+  display: none;
+}
+
+.icon {
+  vertical-align: sub;
+  margin-right: 2px;
+  filter: invert(75%) sepia(0%) saturate(67%) hue-rotate(182deg) brightness(85%) contrast(88%);
+  height: 18px;
+  width: 18px;
+}
+
+#navbar {
+  overflow: hidden;
+}
+
+#navbar a {
+  float: right;
+  display: block;
+  color: #a0a0a0;
+  text-align: center;
+  padding: 14px;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+#navbar a:active {
+  color: #a0a0a0;
+  background-color: white;
+  text-decoration: none;
+}
+
+.misyst {
+  font-size: smaller;
+  color: rgb(54, 54, 54);
+  text-decoration: none;
+  margin-top: 44px;
+  margin-bottom: 27px;
+}
+
+.misyst a {
+  color: rgb(54, 54, 54);
+}
+
+.misyst_history {
+  float: left;
+}
+
+.misyst_since {
+  font-size: 1.5vw;
+  color: rgb(204, 204, 204);
+  padding: 5px;
+  display: inline-block;
+  vertical-align: middle;
+  position: absolute;
+  font-style: italic;
+}
+
+.misyst_copyright {
+  font-size: small;
+  color: rgb(124, 124, 124);
+  padding: 5px;
+  text-align: center;
+}
+
+.misyst_icon {
+  margin-right: 5px;
+  width: 32px;
+  height: 32px;
+  vertical-align: middle;
+}
+
+.PayPal_icon {
+  margin-right: 3px;
+  vertical-align: middle;
+}
+
+#Coca-Cola {
+  transform: rotate(-11deg);
+  position: fixed;
+  overflow: hidden;
+  margin-top: 34%;
+  margin-left: -11%;
+  width: 50%;
+  height: 50%;
+}
