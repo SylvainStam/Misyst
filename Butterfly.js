@@ -52,8 +52,8 @@ function initScene() {
   return s.color !== '';
   }
   
-  color1 = isColor(color1) ? color1 : '#ff0000';
-  color2 = isColor(color2) ? color2 : '#ff0000';
+  color1 = isColor(color1) ? color1 : 'red';
+  color2 = isColor(color2) ? color2 : 'red';
     
   const svg = document.createElementNS('http://www.w3.org/2000/svg', 'svg');
   svg.setAttribute('xlink','http://www.w3.org/1999/xlink');
