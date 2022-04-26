@@ -45,15 +45,20 @@ function initScene() {
   camera.position.z = 75;
   
   function bfWing(color1, color2) {
-  if (!color1 | !color1) {
-    var color1, color2;
-    color1 = '#7bb943';
-    color2 = '#4ba24a';
+
+  const isColor = (strColor) => {
+  const s = new Option().style;
+  s.color = strColor;
+  return s.color !== '';
   }
+  
+  color1 = isColor(color1) ? color1 : '#ff0000';
+  color2 = isColor(color2) ? color2 : '#ff0000';
+    
   const svg = document.createElementNS('http://www.w3.org/2000/svg', 'svg');
   svg.setAttribute('xlink','http://www.w3.org/1999/xlink');
-  svg.setAttribute('width','184pt');
-  svg.setAttribute('height','184pt');
+  svg.setAttribute('width','256px');
+  svg.setAttribute('height','256px');
   svg.setAttribute('viewBox','0 0 184 184');
 
   const path1 = document.createElementNS('http://www.w3.org/2000/svg', 'path');
