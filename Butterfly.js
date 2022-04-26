@@ -57,8 +57,8 @@ function initScene() {
     
   const svg = document.createElementNS('http://www.w3.org/2000/svg', 'svg');
   svg.setAttribute('xlink','http://www.w3.org/1999/xlink');
-  svg.setAttribute('width','256px');
-  svg.setAttribute('height','256px');
+  svg.setAttribute('width','512px');
+  svg.setAttribute('height','512px');
   svg.setAttribute('viewBox','0 0 184 184');
 
   const path1 = document.createElementNS('http://www.w3.org/2000/svg', 'path');
