@@ -106,12 +106,9 @@ function initScene() {
 
   shuffle();
   
-var spotOn = true;
-window.setInterval(function(){spot()},0);
-
+window.setInterval(function(){spot()});
+  
 function spot() {
-
-    if(spotOn) {
   var div = document.getElementById("facebook");
   var rect = div.getBoundingClientRect();
 
@@ -128,8 +125,6 @@ function spot() {
 
   raycaster.setFromCamera(mouse, camera);
   raycaster.ray.intersectPlane(mousePlane, destination);
-  }
-    spotOn = !spotOn;
 }
 
 }
