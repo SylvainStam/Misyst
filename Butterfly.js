@@ -243,7 +243,7 @@ Butterfly.prototype.shuffle = function () {
   this.velocity = new THREE.Vector3(rnd(1, true), rnd(1, true), rnd(1, true));
   var p = new THREE.Vector3(rnd(1, true), rnd(1, true), rnd(1, true)).normalize().multiplyScalar(100);
   this.o3d.position.set(p.x, p.y, p.z);
-  var scale = rnd(0.4) + 0.2;
+  var scale = rnd(0.4) + 0.1;
   this.o3d.scale.set(scale, scale, scale);
 }
 
