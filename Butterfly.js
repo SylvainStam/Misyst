@@ -42,7 +42,7 @@ function init() {
 function initScene() {
   scene = new THREE.Scene();
 
-  camera.position.z = 75;
+  camera.position.z = 74;
   
   function bfWing(color1, color2) {
 
