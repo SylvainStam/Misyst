@@ -59,7 +59,7 @@ function ElementVisibility(id, visibility){
 <script src="Tween.js"></script>
 <script src="lzma-min.js"></script>
 <script>
-var my_lzma = new LZMA("lzma_worker-min.js");
+var my_lzma = new LZMA("https://sylvainstam.github.io/Misyst/lzma_worker-min.js");
 
 function decompress(data) {
   my_lzma.decompress(data, function on_decompress_complete(result) {
@@ -76,7 +76,7 @@ function decompress(data) {
 }
 
 var ajax = new XMLHttpRequest();
-ajax.open("GET", "three.min.js.lzma", true);
+ajax.open("GET", "https://sylvainstam.github.io/Misyst/three.min.js.lzma", true);
 ajax.responseType = "arraybuffer";
 
 ajax.onload = function () {
