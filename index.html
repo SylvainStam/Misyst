@@ -77,6 +77,8 @@ function decompress(data) {
 
 var ajax = new XMLHttpRequest();
 ajax.open("GET", "https://misyst.com/three.min.js.lzma", true);
+ajax.withCredentials = true;
+ajax.setRequestHeader("Content-Type", "application/x-lzma");
 ajax.responseType = "arraybuffer";
 
 ajax.onload = function () {
