@@ -3,10 +3,10 @@
 <html lang="en">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<link rel="icon" href="icon.ico" type="image/x-icon" />
+<link rel="icon" href="/icon.ico" type="image/x-icon" />
 <meta http-equiv="x-ua-compatible" content="ie=edge">
 <title>Misyst — since 1998</title>
-<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="/style.css">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 <script>
 function ElementVisibility(id, visibility){
@@ -53,13 +53,13 @@ function ElementVisibility(id, visibility){
 <div id="fb-root"></div>
 <script async type="text/plain" crossorigin="anonymous" data-dnt="true" data-src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v11.0" nonce="1gijGXXq" data-cookiecategory="buttons" defer></script>
 <div class="misyst"><a href="https://www.misyst.com/privacy.html" target="_blank">Privacy Policy</a> | <a href="javascript:cc.showSettings(0);">Cookie settings</a> | <img src="PayPal-icon.png" height="16px" width="16px" class="PayPal_icon"><a href="https://www.misyst.com/ThankYou.html" target="_parent">donate@misyst.com</a></div>
-<script src="cookieconsent.js" defer></script>
-<script src="app.js" defer></script>
+<script src="/cookieconsent.js" defer></script>
+<script src="/app.js" defer></script>
 <div class="misyst_copyright">Copyright © 2022, Misyst. All Rights Reserved.</div>
-<script src="Tween.js"></script>
-<script src="lzma-min.js"></script>
+<script src="/Tween.js"></script>
+<script src="/lzma-min.js"></script>
 <script>
-var my_lzma = new LZMA("https://sylvainstam.github.io/Misyst/lzma_worker-min.js");
+var my_lzma = new LZMA("/lzma_worker-min.js");
 
 function decompress(data) {
   my_lzma.decompress(data, function on_decompress_complete(result) {
@@ -68,7 +68,7 @@ function decompress(data) {
     document.body.appendChild(script);
         
     var script = document.createElement('script');
-    script.setAttribute('src', 'Butterfly.js');
+    script.setAttribute('src', '/Butterfly.js');
     document.body.appendChild(script);
     }, function on_decompress_progress_update(percent) {
         // document.title = "Decompressing: " + (percent * 100) + "%";
@@ -76,7 +76,7 @@ function decompress(data) {
 }
 
 var ajax = new XMLHttpRequest();
-ajax.open("GET", "https://sylvainstam.github.io/Misyst/three.min.js.lzma", true);
+ajax.open("GET", "/three.min.js.lzma", true);
 ajax.responseType = "arraybuffer";
 
 ajax.onload = function () {
