@@ -56,8 +56,51 @@ function ElementVisibility(id, visibility){
 <script src="cookieconsent.js" defer></script>
 <script src="app.js" defer></script>
 <div class="misyst_copyright">Copyright © 2022, Misyst. All Rights Reserved.</div>
-<script src="three.min.js"></script>
 <script src="Tween.js"></script>
-<script src="Butterfly.js"></script>
+<script src="lzma-min.js"></script>
+<script>
+var my_lzma = new LZMA("https://misyst.com/lzma_worker-min.js");
+
+var XMLHttpTimeout=setTimeout(ajaxTimeout,4000);
+
+function newScript(data, callback) {
+  for (const d of data) {
+    var script = document.createElement('script');
+    d.split('.').pop()=='js' ? script.src = d : script.text = d;
+    script.onload=function(){
+      if (callback){
+        callback();
+      }
+    }
+  document.body.appendChild(script);
+  }
+}
+
+function decompress(data) {
+  my_lzma.decompress(data, function on_complete(result) {
+    clearTimeout(XMLHttpTimeout);
+    newScript([result, "Butterfly.js"]);
+    }, function on_update(percent) {
+      // document.title = "Decompressing: " + (percent * 100) + "%";
+    });
+}
+
+var ajax = new XMLHttpRequest();
+ajax.open("GET", "https://misyst.com/three.min.js.lzma", true);
+ajax.responseType = "arraybuffer";
+
+ajax.onload = function () {
+  decompress(new Uint8Array(ajax.response));
+};
+
+function ajaxTimeout(){
+  ajax.abort();
+  newScript(["three.min.js"], function(){
+    newScript(["Butterfly.js"]);
+  });
+}
+
+ajax.send();
+</script>
 </body>
 </html>
