@@ -76,7 +76,7 @@ function newScript(data, callback) {
 }
 
 function decompress(data) {
-  var result = pako.inflate(data, { to: 'string' });
+  var result = d.inflate(data, { to: 'string' });
   clearTimeout(XMLHttpTimeout);
   newScript([result, "Butterfly.js"]);
 }
