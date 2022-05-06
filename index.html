@@ -58,45 +58,6 @@ function ElementVisibility(id, visibility){
 <div class="misyst_copyright">Copyright © 2022, Misyst. All Rights Reserved.</div>
 <script src="three.min.js"></script>
 <script src="Tween.js"></script>
-<script src="d_inflate.min.js"></script>
-<script>
-var XMLHttpTimeout=setTimeout(ajaxTimeout,2000);
-
-function newScript(data, callback) {
-  for (const d of data) {
-    var script = document.createElement('script');
-    d.split('.').pop()=='js' ? script.src = d : script.text = d;
-    script.onload=function(){
-      if (callback){
-        callback();
-      }
-    }
-    document.body.appendChild(script);
-  }
-}
-
-function decompress(data) {
-  var result = d.inflate(data, { to: 'string' });
-  clearTimeout(XMLHttpTimeout);
-  newScript([result, "Butterfly.js"]);
-}
-
-var ajax = new XMLHttpRequest();
-ajax.open("GET", "https://misyst.com/three.min.js.gz", true);
-ajax.responseType = "arraybuffer";
-
-ajax.onload = function () {
-  decompress(new Uint8Array(ajax.response));
-};
-
-function ajaxTimeout(){
-  ajax.abort();
-  newScript(["three.min.js"], function(){
-    newScript(["Butterfly.js"]);
-  });
-}
-
-ajax.send();
-</script>
+<script src="Butterfly.js"></script>
 </body>
 </html>
