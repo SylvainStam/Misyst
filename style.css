@@ -19,6 +19,7 @@ body {
   display: table-cell;
   text-align: center;
   background-color: #ededed;
+  background: linear-gradient(0deg, rgba(255,255,255,1) 50%, rgba(237,237,237,1) 80%);
 }
 
 canvas {
@@ -28,7 +29,6 @@ canvas {
   left:0;
   top:0;
   z-index: -1;
-  background: linear-gradient(0deg, rgba(255,255,255,1) 50%, rgba(237,237,237,1) 80%);
 }
 
 h1 {
