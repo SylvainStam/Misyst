@@ -1,18 +1,8 @@
-@font-face {
-    font-family: 'Arimo-Regular';
-    src: url('ArimoRegular.eot');
-    src: url('ArimoRegular.eot') format('embedded-opentype'),
-         url('ArimoRegular.woff2') format('woff2'),
-         url('ArimoRegular.woff') format('woff'),
-         url('ArimoRegular.ttf') format('truetype'),
-         url('ArimoRegular.svg#ArimoRegular') format('svg');
-}
-
 html {
   width: 100%;
   height: 100%;
   display: table;
-  font-family: Arimo-Regular;
+  font-family: 'Arimo', sans-serif;
 }
 
 body {
