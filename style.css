@@ -8,10 +8,11 @@ html {
 body {
   display: table-cell;
   text-align: center;
+  background-color: #ededed;
+  background: linear-gradient(0deg, rgba(255,255,255,1) 50%, rgba(237,237,237,1) 80%);
 }
 
 canvas {
-  background: linear-gradient(0deg, rgba(255,255,255,1) 50%, rgba(237,237,237,1) 80%);
   position: absolute;
   width: 100%;
   height: 100%;
