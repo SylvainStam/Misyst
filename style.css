@@ -3,6 +3,7 @@ html {
   height: 100%;
   display: table;
   font-family: 'Arimo', sans-serif;
+  font-weight: 400;
 }
 
 body {
@@ -27,7 +28,7 @@ h1 {
   font-size: 4em;
   font-weight: normal;
   text-transform: lowercase;
-  color: #273c42;
+  color: #33444b;
 }
 
 svg {
