@@ -7,7 +7,7 @@ html {
 }
 
 body {
-  background-color: rgb(241, 241, 241);
+  /* background-color: rgb(241, 241, 241); */
   display: table-cell;
   text-align: center;
   width: 100%;
@@ -28,7 +28,7 @@ h1 {
   font-size: 4em;
   font-weight: normal;
   text-transform: lowercase;
-  color: #33444b;
+  color: #273c42;
 }
 
 svg {
