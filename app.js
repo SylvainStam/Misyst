@@ -150,51 +150,6 @@ cc.run({
 							}
 						]
 					},{
-						title : "Buttons cookies",
-						description: 'These cookies collect information about how functionality has to be served. All of these data is been storage anonymized and may be used to improve functionality. * Additional cookies may be placed of cookie settings by the use of the services',
-						toggle : {
-							value : 'buttons',
-							enabled : true,
-							readonly: false
-						},
-						cookie_table: [
-							{
-								col1: 'locale',
-								col2: 'facebook.com *',
-								col3: '7 days',
-								col4: 'Language/country' ,
-								col5: 'Temporary cookie'
-							},
-							{
-								col1: 'datr',
-								col2: 'facebook.com *',
-								col3: '2 years',
-								col4: 'Browser identity' ,
-								col5: 'Persistent cookie'
-							},
-							{
-								col1: 'guest_id',
-								col2: 'twitter.com *',
-								col3: '2 years',
-								col4: 'Guest identity' ,
-								col5: 'Persistent cookie'
-							},
-							{
-								col1: 'personalization_id',
-								col2: 'twitter.com *',
-								col3: '2 years',
-								col4: 'Personalization identity' ,
-								col5: 'Persistent cookie'
-							},
-							{
-								col1: 'ads_prefs',
-								col2: 'twitter.com *',
-								col3: '5 years',
-								col4: '<a class="cc-link" href="https://twitter.com/settings/account/personalization" target="_blank">Personalization</a>' ,
-								col5: 'Settings'
-							}
-						]
-					},{
 						title : "More information",
 						description: 'For any queries in relation to the policy on cookies and your choices, please <a class="cc-link" href="https://www.misyst.com/">visit Misyst</a>.',
 					}
