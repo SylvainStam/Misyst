@@ -109,7 +109,7 @@ function initScene() {
 window.setInterval(function(){spot()});
   
 function spot() {
-  var div = document.getElementById("facebook");
+  var div = document.getElementById("marquee");
   var rect = div.getBoundingClientRect();
 
   var width = div.clientWidth;
