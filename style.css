@@ -52,8 +52,8 @@ svg {
 }
 
 @keyframes marquee {
-  0% { left: 0; }
-  100% { left: -100%; }
+  1000% { left: -100%; }
+  0% { left: 0%; }
 }
 
 .powered_by {
@@ -150,4 +150,50 @@ svg {
   margin-left: -11%;
   width: 50%;
   height: 50%;
+}
+
+.Search {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 74px;
+}
+
+.searchBox {
+  width: 44rem;
+  border-radius: 50px;
+  padding: 10px 12px;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.15);
+  justify-content: space-between;
+  margin: 0px 10px;
+}
+
+#Misyst-img {
+  width: 30px;
+  cursor: pointer;
+}
+
+#mic {
+  width: 17px;
+  cursor: pointer;
+}
+
+#input {
+  background: transparent;
+  border: 0;
+  width: 85%;
+  font-size: 20px;
+  padding: 5px;
+}
+#input:focus {
+  outline: none;
+}
+
+@media (max-width:430px) {
+  #input::placeholder{
+      padding-left: 13px;
+  }
 }
