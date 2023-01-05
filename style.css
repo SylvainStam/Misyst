@@ -27,6 +27,7 @@ canvas {
 svg {
   width: 40%;
   height: 40%;
+  margin-bottom: 10px;
 }
 
 .marquee {
@@ -150,4 +151,18 @@ svg {
   margin-left: -11%;
   width: 50%;
   height: 50%;
+}
+
+.gsc-input-box {
+  width:450px;
+  height:40px;
+  font-family: Verdana, Tahoma, sans-serif;
+  font-size: 40px;
+}
+  
+.gsc-search-button {
+  width:30px;
+  height:30px;
+  font-family: Verdana, Tahoma, sans-serif;
+  font-size: 40px;
 }
