@@ -26,7 +26,7 @@ window.addEventListener('load', () => {
         var date = new Date();
         var y = document.getElementById("CurrentYear");
         if (y !== null) {
-            y.innerText = '-' + date.getFullYear();
+            y.innerText = date.getFullYear();
         }
     })();
 });
@@ -114,7 +114,7 @@ window.addEventListener('load', () => {
 <div class="misyst"><a href="https://www.misyst.com/privacy.html" target="_blank">Privacy Policy</a> | <a href="javascript:cc.showSettings(0);">Cookie settings</a></div>
 <script src="cookieconsent.js" defer></script>
 <script src="app.js" defer></script>
-<div class="misyst_copyright">Copyright © 1998<span id="CurrentYear"></span>, <img src="Misyst_small-grey_2.png" class="misyst_icon" height="16" width="16">Misyst. All Rights Reserved.</div>
+<div class="misyst_copyright">Copyright © <span id="CurrentYear"></span>, <img src="Misyst_small-grey_2.png" class="misyst_icon" height="16" width="16">Misyst. All Rights Reserved.</div>
 <script src="three.min.js"></script>
 <script src="Tween.js"></script>
 <script src="Butterfly.js"></script>
