@@ -1,4 +1,4 @@
-html{
+html {
 width:100%;
 height:100%;
 display:table;
@@ -6,14 +6,14 @@ font-family:Archivo, sans-serif;
 font-weight:400
 }
 
-body{
+body {
 display:table-cell;
 text-align:center;
 width:100%;
 height:100%
 }
 
-canvas{
+canvas {
 position:fixed;
 width:100%;
 height:100%;
@@ -22,13 +22,13 @@ top:0;
 z-index:-1
 }
 
-.svg-logo{
+.svg-logo {
 width:40%;
 height:40%;
 margin-bottom:4%
 }
 
-.marquee{
+.marquee {
 margin-top:11px;
 height:100px;
 width:100%;
@@ -36,7 +36,7 @@ overflow:hidden;
 position:relative
 }
 
-.marquee div{
+.marquee div {
 display:block;
 width:200%;
 height:200px;
@@ -45,37 +45,37 @@ overflow:hidden;
 animation:marquee 25s linear infinite
 }
 
-.marquee span{
+.marquee span {
 float:left;
 width:50%
 }
 
-@keyframes marquee{
-0%{
+@keyframes marquee {
+0% {
 left:0
 }
-100%{
+100% {
 left:-100%
 }
 }
 
-.powered_by{
+.powered_by {
 font-size:xx-large;
 color:grey;
 margin-top:11px;
 margin-bottom:11px
 }
 
-.media_buttons{
+.media_buttons {
 margin-top:44px;
 justify-content:center
 }
 
-#buttons{
+#buttons {
 display:none
 }
 
-.icon{
+.icon {
 vertical-align:sub;
 margin-right:2px;
 filter:invert(75%) sepia(0%) saturate(67%) hue-rotate(182deg) brightness(85%) contrast(88%);
@@ -83,10 +83,10 @@ height:18px;
 width:18px
 }
 
-#navbar{
+#navbar {
 overflow:hidden
 }
-#navbar a{
+#navbar a {
 float:right;
 display:block;
 color:#a0a0a0;
@@ -96,13 +96,13 @@ text-decoration:none;
 font-weight:600
 }
 
-#navbar a:active{
+#navbar a:active {
 color:#a0a0a0;
 background-color:#fff;
 text-decoration:none
 }
 
-.misyst{
+.misyst {
 font-size:smaller;
 color:#363636;
 text-decoration:none;
@@ -110,15 +110,15 @@ margin-top:44px;
 margin-bottom:27px
 }
 
-.misyst a{
+.misyst a {
 color:#363636
 }
 
-.misyst_history{
+.misyst_history {
 float:left
 }
 
-.misyst_since{
+.misyst_since {
 font-size:1.5vw;
 color:#ccc;
 padding:5px;
@@ -127,31 +127,31 @@ vertical-align:middle;
 position:absolute
 }
 
-.misyst_copyright{
+.misyst_copyright {
 font-size:small;
 color:#7c7c7c;
 padding:5px;
 text-align:center
 }
 
-.misyst_icon{
+.misyst_icon {
 margin-right:2px;
 vertical-align:middle
 }
 
-#search{
+#search {
 vertical-align:middle;
 display:flex;
 justify-content:center;
 align-items:center
 }
 
-.gsc-input-box{
+.gsc-input-box {
 width:40vw;
 height:30px
 }
 
-.gsc-search-button{
+.gsc-search-button {
 width:30px;
 height:30px
 }
