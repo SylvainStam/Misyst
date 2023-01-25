@@ -23,7 +23,7 @@ z-index:-1
 }
 
 svg{
-filter: drop-shadow(1px 1px 1px rgb(23 36 46 / 0.01));
+filter: drop-shadow(0.1px 0.1px 0.1px rgb(23 36 46 / 0.01));
 }
 
 .svg-logo{
