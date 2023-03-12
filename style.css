@@ -23,9 +23,10 @@ z-index:-1
 }
 
 .svg-logo {
-width:40%;
-height:40%;
-margin-bottom:4%
+width:34%;
+height:34%;
+margin-bottom:114px;
+position:static;
 }
 
 .marquee {
@@ -62,8 +63,8 @@ left:-100%
 .powered_by {
 font-size:xx-large;
 color:grey;
-margin-top:11px;
-margin-bottom:11px
+margin-top:41px;
+margin-bottom:22px
 }
 
 .media_buttons {
