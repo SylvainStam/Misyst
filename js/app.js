@@ -14,7 +14,7 @@ cc.run({
 	cookie_domain : 'misyst.com',
 	autoclear_cookies : true,
 	cookie_expiration : 365,
-	theme_css: 'cookieconsent.css',
+	theme_css: 'css/cookieconsent.css',
 	force_consent: false,
 	page_scripts: true,
 
