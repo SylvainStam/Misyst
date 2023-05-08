@@ -68,6 +68,12 @@ margin-top:41px;
 margin-bottom:22px
 }
 
+.logo-text {
+font-family:Archivo, sans-serif;
+font-size:94px;
+fill:rgb(80, 84, 90);
+}
+
 .media_buttons {
 margin-top:44px;
 justify-content:center
