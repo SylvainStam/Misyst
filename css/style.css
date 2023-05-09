@@ -1,3 +1,16 @@
+@font-face {
+  font-family: 'Bauhaus';
+  src: url('../fonts/Bauhaus-Medium.eot');
+  src: url('../fonts/Bauhaus-Medium.eot?#iefix') format('embedded-opentype'),
+      url('../fonts/Bauhaus-Medium.woff2') format('woff2'),
+      url('../fonts/Bauhaus-Medium.woff') format('woff'),
+      url('../fonts/Bauhaus-Medium.ttf') format('truetype'),
+      url('../fonts/Bauhaus-Medium.svg#Bauhaus-Regular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
 html {
 width:100%;
 height:100%;
@@ -11,7 +24,7 @@ display:table-cell;
 text-align:center;
 width:100%;
 height:100%;
-font-family: sans-serif;
+font-family: Arial, Helvetica, sans-serif;
 }
 
 canvas {
@@ -69,10 +82,17 @@ margin-bottom:22px
 }
 
 .logo-text {
-font-family:Archivo, sans-serif;
-font-size:94px;
+font-family: Archivo, Arial, Helvetica, sans-serif;
+font-size: 94px;
 fill:rgb(80, 84, 90);
 }
+
+.logo-slogan {
+  margin-top: 40px;
+  font-family: cursive, Archivo, Arial, Helvetica, sans-serif;
+  font-size:23px;
+  fill:rgb(144, 152, 161);
+  }
 
 .media_buttons {
 margin-top:44px;
@@ -84,6 +104,7 @@ display:none
 }
 
 .icon {
+position:relative;
 vertical-align:sub;
 margin-right:2px;
 filter:invert(75%) sepia(0%) saturate(67%) hue-rotate(182deg) brightness(85%) contrast(88%);
@@ -144,6 +165,7 @@ text-align:center
 
 .misyst_icon {
 margin-right:2px;
+position: relative;
 vertical-align:middle
 }
 
@@ -162,4 +184,205 @@ height:30px
 .gsc-search-button {
 width:30px;
 height:30px
+}
+
+
+
+
+
+.responsive-banner {
+    display: inline-block;
+    margin: 50px;
+    width: 60%;
+    max-width: 590px;
+    min-width: 420px;
+    position: relative;
+    min-height: 300px;
+    max-height: 450px;
+    border-radius: 10px;
+    overflow: hidden;
+      background-image: linear-gradient(to bottom right, #D45BA1, #A784E0);
+      background-repeat: no-repeat;
+    text-align: left;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+  }
+  .responsive-banner.second {
+    background-image: linear-gradient(to bottom right, #F4C28E, #E67163);
+  }
+  .responsive-banner.third {
+    background-image: linear-gradient(to bottom right, #589FE5, #74DAC4);
+  }
+  .container-envelope {
+    max-width: calc(100%);
+    padding: 15px;
+    color: #fff;
+     display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+    min-height: 300px;
+    max-height: 450px;
+  }
+  .col-xs-12 {
+    -webkit-box-flex: 0;
+      -webkit-flex: 0 0 100%;
+      -ms-flex: 0 0 100%;
+      flex: 0 0 100%;
+      max-width: 100%;
+    -webkit-align-self: flex-end;
+              -ms-flex-item-align: end;
+                      align-self: flex-end;
+  }
+  
+  @media (min-width: 650px) {
+    .col-xs-12 {
+      -webkit-align-self: center;
+        -ms-flex-item-align: center;
+        align-self: center;
+    }
+      .container-envelope {
+      max-width: calc(100% - 200px);
+    }
+  }
+  p {
+      clear: both;
+      font-family: 'Work Sans', Helvetica, sans-serif;
+      text-transform: none;
+      text-rendering: optimizeLegibility;
+      font-weight: 500;
+      line-height: 1.15;
+      word-wrap: break-word;
+      margin: 1em 0 0.5em;
+      margin: 0;
+      padding: 0;
+      color: #fff;
+      position: relative;
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+  * {
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      box-sizing: border-box;
+  }
+  a.more-link {
+      background-color: rgba(255, 255, 255, 0.35);
+      display: inline-block;
+      padding: 12px 18px;
+      color: #fff;
+      text-decoration: none;
+      font: 500 15px 'Work Sans', Helvetica, sans-serif;
+      line-height: 1.5;
+      text-align: center;
+      border: none !important;
+      position: relative;
+      border-radius: 30px;
+      -webkit-transition: .1s all ease-in-out;
+      -moz-transition: .1s all ease-in-out;
+      -o-transition: .1s all ease-in-out;
+      transition: .1s all ease-in-out;
+  }
+  a.more-link:hover {
+    background-color: rgba(255, 255, 255, 0.50);
+  }
+  .concept-title {
+    color: #1a3b4b;
+    font-family: Bauhaus, Archivo, Arial, Helvetica, sans-serif;
+    font-size:32px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-shadow: 0.7px 0.9px 1px rgb(181, 232, 255);
+  }
+  .concept-description {
+    color: #0c77a5;
+    font-size:18px;
+    font-weight: normal;
+    background: linear-gradient(to top, #0c4b66 0%, #0c77a5 100%);
+    background-clip: content-box;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  svg, img {
+    fill: rgba(0, 0, 0, 0.1);
+    position: absolute;
+  }
+  img {
+    max-width : 50%;
+  }
+  .circle {
+    top: -330px;
+    right: -300px;
+  }
+  .logo-misyst {
+    top: 132px;
+        right: -45px;
+  }
+  img {
+    top: 0;
+    right: 0;
+  }
+  
+  html, button, input, select, textarea {
+    font-family: 'Source Sans Pro', Helvetica, sans-serif;
+    color: #90b0bf;
+  }
+  h1 {
+    text-align: center;
+    margin: 30px 15px;
+  }
+  .link-container {
+    text-align: center;
+  }
+  .link-container a.more-link {
+    font-family: 'Source Sans Pro', Helvetica, sans-serif;
+    background-color: #90b0bf;
+    color: #fff;
+    display: inline-block;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    line-height: 1.5;
+    text-decoration: none;
+    text-transform: none;
+    font-weight: 400;
+    letter-spacing: 1px;
+  }
+
+
+.left-sidebar-grid {
+    display:grid;
+    grid-template-areas:
+        'header'
+        'main-content'
+        'left-sidebar'
+        'footer';
+}
+
+.left-sidebar-grid > * {
+    padding:1rem;
+}
+
+.left-sidebar-grid > .header {
+    grid-area:header;
+}
+.left-sidebar-grid > .main-content {
+    grid-area:main-content;
+}
+.left-sidebar-grid > .left-sidebar {
+    grid-area:left-sidebar;
+}
+.left-sidebar-grid > .right-sidebar {
+    grid-area:right-sidebar;
+}
+.left-sidebar-grid > .footer {
+    grid-area:footer;
+}
+
+@media (min-width:768px) {
+    .left-sidebar-grid {
+        grid-template-columns:repeat(3, 1fr);
+        grid-template-areas:
+            'header header header'
+            'left-sidebar main-content main-content'
+            'footer footer footer';
+    }
 }
