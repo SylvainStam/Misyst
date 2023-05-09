@@ -38,92 +38,140 @@ window.addEventListener('load', () => {
 </head>
 <body>
 <div>
-<div id="navbar">
-<a href="javascript:cc.showSettings(0);"><img src="svg/settings.svg" class="icon">Cookie settings</a>
-<a href="https://access.misyst.com/"><img src="svg/log-in.svg" class="icon">Login</a>
-<a href="https://www.misyst.com/" style="background-color: white;"><img src="svg/home.svg" class="icon">Home</a>
-<div class="misyst_history"><span class="misyst_since"><img src="img/Misyst_small-grey_1.png" class="misyst_icon">Concept Development</span></div>
-</div>
-
-<div class="tradingview-widget-container">
-<div class="tradingview-widget-container__widget"></div>
-<div class="tradingview-widget-copyright"><a href="https://www.apireq.com/" rel="noopener" target="_blank"><span class="blue-text">API request</span></a> by Apireq</div>
-<script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-ticker-tape.js" async>
-    {
-    "symbols": [
-      {
-        "proName": "FOREXCOM:SPXUSD",
-        "title": "S&P 500"
-      },
-      {
-        "proName": "FOREXCOM:NSXUSD",
-        "title": "US 100"
-      },
-      {
-        "proName": "FX_IDC:GBPUSD",
-        "title": "GBP/USD"
-      },
-      {
-        "proName": "FX_IDC:EURUSD",
-        "title": "EUR/USD"
-      },
-      {
-        "proName": "BITSTAMP:BTCUSD",
-        "title": "Bitcoin"
-      },
-      {
-        "proName": "BITSTAMP:ETHUSD",
-        "title": "Ethereum"
-      },
-      {
-       "description": " UK 100",
-       "proName": "CAPITALCOM:UK100"
-      }
-    ],
-    "showSymbolLogo": true,
-    "colorTheme": "light",
-    "isTransparent": true,
-    "displayMode": "adaptive",
-    "locale": "en"
-  }
-    </script>
-</div>
-
-<div class="powered_by">Powered by</div>
-<div class="wrapper">
-<svg class="svg-logo" xmlns="http://www.w3.org/2000/svg" width="70%" height="70%" viewBox="0 0 471 171">
-<defs>
-<linearGradient id="gradient-1-0" gradientUnits="userSpaceOnUse" x1="20.559" y1="0" x2="20.559" y2="80.371" xlink:href="#gradient-1" />
-<linearGradient id="gradient-1">
-<stop offset="0.4" style="stop-color: rgb(112,166,42);" />
-<stop offset="1" style="stop-color: rgb(147,175,56);" />
-</linearGradient>
-<linearGradient id="gradient-2-0" gradientUnits="userSpaceOnUse" x1="105.668" y1="90.331" x2="105.668" y2="170.522" xlink:href="#gradient-2" />
-<linearGradient id="gradient-2">
-<stop offset="0.4" style="stop-color: rgb(64,154,197);" />
-<stop offset="1" style="stop-color: rgb(90,184,219);" />
-</linearGradient>
-</defs>
-<g id="layer1" transform="translate(0 0)">
-<g id="g1" transform="translate(-.27213 .28257)">
-<path id="path-1" d="M 150.939 104.932 C 135.404 87.267 102.592 55.125 111.339 35.966 C 124.559 13.155 149.111 32.104 150.302 32.493 C 151.353 32.605 150.197 32.17 150.939 32.613 C 151.072 51.248 150.937 94.639 150.939 104.932 Z" style="fill: url(#gradient-1-0);" transform="matrix(0, 1, -1, 0, 195.275234, -65.603077)" />
-<path id="path-2" d="M 150.933 65.582 C 135.398 83.247 102.586 115.389 111.333 134.548 C 124.553 157.359 149.105 138.41 150.296 138.022 C 151.347 137.909 150.19 138.344 150.933 137.901 C 151.066 119.266 150.931 75.876 150.933 65.582 Z" style="fill: rgb(56,139,44);" transform="matrix(0, -1, 1, 0, 24.755199, 236.111095)" />
-<path id="path-3" d="M 126.168 170.522 C 110.633 152.858 77.821 120.716 86.568 101.556 C 99.788 78.746 124.34 97.694 125.531 98.083 C 126.582 98.196 125.426 97.76 126.168 98.204 C 126.301 116.839 126.166 160.229 126.168 170.522 Z" style="fill: url(#gradient-2-0);" transform="matrix(-1, 0, 0, -1, 211.336304, 260.8526)" />
-<path id="path-4" d="M 85.346 90.351 C 69.811 108.016 37 140.157 45.746 159.317 C 58.966 182.127 83.519 163.179 84.709 162.79 C 85.76 162.677 84.604 163.113 85.346 162.669 C 85.48 144.034 85.344 100.644 85.346 90.351 Z" style="fill: rgb(57,134,170);" />
-<path id="path-5" d="M 60.811 145.77 C 45.276 128.105 12.464 95.963 21.211 76.803 C 34.431 53.993 58.984 72.942 60.174 73.33 C 61.225 73.443 60.069 73.008 60.811 73.451 C 60.945 92.086 60.809 135.476 60.811 145.77 Z" style="fill: rgb(69,144,138);" transform="matrix(0, -1, 1, 0, -65.362562, 145.9853)" />
-<path id="path-6" d="M 60.83 24.745 C 45.295 42.41 12.484 74.552 21.23 93.711 C 34.45 116.522 59.003 97.573 60.193 97.185 C 61.244 97.072 60.088 97.507 60.83 97.064 C 60.964 78.429 60.828 35.039 60.83 24.745 Z" style="fill: rgb(54,130,97);" transform="matrix(0, 1, -1, 0, 105.171453, 24.510435)" />
-<path id="path-7" d="M 85.346 80.427 C 69.811 62.762 37 30.62 45.746 11.46 C 58.966 -11.35 83.519 7.599 84.709 7.987 C 85.76 8.1 84.604 7.665 85.346 8.108 C 85.48 26.743 85.344 70.133 85.346 80.427 Z" style="fill: rgb(69,154,89);" />
-<path id="path-8" d="M 126.167 0.214 C 110.632 17.879 77.82 50.021 86.567 69.181 C 99.787 91.991 124.34 73.042 125.53 72.654 C 126.581 72.541 125.425 72.976 126.167 72.533 C 126.301 53.898 126.165 10.508 126.167 0.214 Z" style="fill: rgb(56,139,44);" transform="matrix(-1, 0, 0, -1, 211.33477, 80.620139)" />
-</g>
-<text xml:space="preserve" x="177" y="118" class="logo-text">Misyst</text>
-</g>
-</svg>
-<div class="gcse-searchbox-only" id="search"></div>
+<div class="left-sidebar-grid">
+  <header class="header">
+    <div id="navbar">
+      <a href="javascript:cc.showSettings(0);"><img src="svg/settings.svg" class="icon">Cookie settings</a>
+      <a href="https://access.misyst.com/"><img src="svg/log-in.svg" class="icon">Login</a>
+      <a href="https://www.misyst.com/" style="background-color: white;"><img src="svg/home.svg" class="icon">Home</a>
+      <div class="misyst_history"><span class="misyst_since"><img src="img/Misyst_small-grey_1.png" class="misyst_icon">Concept Development</span></div>
+      </div>
+      
+      <div class="tradingview-widget-container">
+      <div class="tradingview-widget-container__widget"></div>
+      <div class="tradingview-widget-copyright"><a href="https://www.apireq.com/" rel="noopener" target="_blank"><span class="blue-text">API request</span></a> by Apireq</div>
+      <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-ticker-tape.js" async>
+          {
+          "symbols": [
+            {
+              "proName": "FOREXCOM:SPXUSD",
+              "title": "S&P 500"
+            },
+            {
+              "proName": "FOREXCOM:NSXUSD",
+              "title": "US 100"
+            },
+            {
+              "proName": "FX_IDC:GBPUSD",
+              "title": "GBP/USD"
+            },
+            {
+              "proName": "FX_IDC:EURUSD",
+              "title": "EUR/USD"
+            },
+            {
+              "proName": "BITSTAMP:BTCUSD",
+              "title": "Bitcoin"
+            },
+            {
+              "proName": "BITSTAMP:ETHUSD",
+              "title": "Ethereum"
+            },
+            {
+             "description": " UK 100",
+             "proName": "CAPITALCOM:UK100"
+            }
+          ],
+          "showSymbolLogo": true,
+          "colorTheme": "light",
+          "isTransparent": true,
+          "displayMode": "adaptive",
+          "locale": "en"
+        }
+          </script>
+      </div>
+  </header>
+  <main class="main-content">
+    <div class="powered_by">Powered by</div>
+    <svg class="svg-logo" xmlns="http://www.w3.org/2000/svg" width="70%" height="70%" viewBox="0 0 471 171">
+      <defs>
+      <linearGradient id="gradient-1-0" gradientUnits="userSpaceOnUse" x1="20.559" y1="0" x2="20.559" y2="80.371" xlink:href="#gradient-1" />
+      <linearGradient id="gradient-1">
+      <stop offset="0.4" style="stop-color: rgb(112,166,42);" />
+      <stop offset="1" style="stop-color: rgb(147,175,56);" />
+      </linearGradient>
+      <linearGradient id="gradient-2-0" gradientUnits="userSpaceOnUse" x1="105.668" y1="90.331" x2="105.668" y2="170.522" xlink:href="#gradient-2" />
+      <linearGradient id="gradient-2">
+      <stop offset="0.4" style="stop-color: rgb(64,154,197);" />
+      <stop offset="1" style="stop-color: rgb(90,184,219);" />
+      </linearGradient>
+      </defs>
+      <g id="layer1" transform="translate(0 0)">
+      <g id="g1" transform="translate(-.27213 .28257)">
+      <path id="path-1" d="M 150.939 104.932 C 135.404 87.267 102.592 55.125 111.339 35.966 C 124.559 13.155 149.111 32.104 150.302 32.493 C 151.353 32.605 150.197 32.17 150.939 32.613 C 151.072 51.248 150.937 94.639 150.939 104.932 Z" style="fill: url(#gradient-1-0);" transform="matrix(0, 1, -1, 0, 195.275234, -65.603077)" />
+      <path id="path-2" d="M 150.933 65.582 C 135.398 83.247 102.586 115.389 111.333 134.548 C 124.553 157.359 149.105 138.41 150.296 138.022 C 151.347 137.909 150.19 138.344 150.933 137.901 C 151.066 119.266 150.931 75.876 150.933 65.582 Z" style="fill: rgb(56,139,44);" transform="matrix(0, -1, 1, 0, 24.755199, 236.111095)" />
+      <path id="path-3" d="M 126.168 170.522 C 110.633 152.858 77.821 120.716 86.568 101.556 C 99.788 78.746 124.34 97.694 125.531 98.083 C 126.582 98.196 125.426 97.76 126.168 98.204 C 126.301 116.839 126.166 160.229 126.168 170.522 Z" style="fill: url(#gradient-2-0);" transform="matrix(-1, 0, 0, -1, 211.336304, 260.8526)" />
+      <path id="path-4" d="M 85.346 90.351 C 69.811 108.016 37 140.157 45.746 159.317 C 58.966 182.127 83.519 163.179 84.709 162.79 C 85.76 162.677 84.604 163.113 85.346 162.669 C 85.48 144.034 85.344 100.644 85.346 90.351 Z" style="fill: rgb(57,134,170);" />
+      <path id="path-5" d="M 60.811 145.77 C 45.276 128.105 12.464 95.963 21.211 76.803 C 34.431 53.993 58.984 72.942 60.174 73.33 C 61.225 73.443 60.069 73.008 60.811 73.451 C 60.945 92.086 60.809 135.476 60.811 145.77 Z" style="fill: rgb(69,144,138);" transform="matrix(0, -1, 1, 0, -65.362562, 145.9853)" />
+      <path id="path-6" d="M 60.83 24.745 C 45.295 42.41 12.484 74.552 21.23 93.711 C 34.45 116.522 59.003 97.573 60.193 97.185 C 61.244 97.072 60.088 97.507 60.83 97.064 C 60.964 78.429 60.828 35.039 60.83 24.745 Z" style="fill: rgb(54,130,97);" transform="matrix(0, 1, -1, 0, 105.171453, 24.510435)" />
+      <path id="path-7" d="M 85.346 80.427 C 69.811 62.762 37 30.62 45.746 11.46 C 58.966 -11.35 83.519 7.599 84.709 7.987 C 85.76 8.1 84.604 7.665 85.346 8.108 C 85.48 26.743 85.344 70.133 85.346 80.427 Z" style="fill: rgb(69,154,89);" />
+      <path id="path-8" d="M 126.167 0.214 C 110.632 17.879 77.82 50.021 86.567 69.181 C 99.787 91.991 124.34 73.042 125.53 72.654 C 126.581 72.541 125.425 72.976 126.167 72.533 C 126.301 53.898 126.165 10.508 126.167 0.214 Z" style="fill: rgb(56,139,44);" transform="matrix(-1, 0, 0, -1, 211.33477, 80.620139)" />
+      </g>
+      <text xml:space="preserve" x="177" y="118" class="logo-text">Misyst</text>
+      <text xml:space="preserve" x="182" y="144" class="logo-slogan">Anything else</text>
+      </g>
+      </svg>
+      <div class="gcse-searchbox-only" id="search"></div>
+  </main>
+  <section class="left-sidebar">
+    <aside class="responsive-banner third">
+      <div class="container-envelope">
+        <svg class="circle" height="600" width="600">
+          <circle cx="300" cy="300" r="300"/>
+        </svg>
+        <svg class="logo-misyst" xmlns="http://www.w3.org/2000/svg" width="70%" height="70%" viewBox="0 0 471 171">
+          <defs>
+          <linearGradient id="gradient-1-0" gradientUnits="userSpaceOnUse" x1="20.559" y1="0" x2="20.559" y2="80.371" xlink:href="#gradient-1" />
+          <linearGradient id="gradient-1">
+          <stop offset="0.4" style="stop-color: rgb(112,166,42);" />
+          <stop offset="1" style="stop-color: rgb(147,175,56);" />
+          </linearGradient>
+          <linearGradient id="gradient-2-0" gradientUnits="userSpaceOnUse" x1="105.668" y1="90.331" x2="105.668" y2="170.522" xlink:href="#gradient-2" />
+          <linearGradient id="gradient-2">
+          <stop offset="0.4" style="stop-color: rgb(64,154,197);" />
+          <stop offset="1" style="stop-color: rgb(90,184,219);" />
+          </linearGradient>
+          </defs>
+          <g id="layer1" transform="translate(0 0)">
+          <g id="g1" transform="translate(-.27213 .28257)">
+          <path id="path-1" d="M 150.939 104.932 C 135.404 87.267 102.592 55.125 111.339 35.966 C 124.559 13.155 149.111 32.104 150.302 32.493 C 151.353 32.605 150.197 32.17 150.939 32.613 C 151.072 51.248 150.937 94.639 150.939 104.932 Z" style="fill: url(#gradient-1-0);" transform="matrix(0, 1, -1, 0, 195.275234, -65.603077)" />
+          <path id="path-2" d="M 150.933 65.582 C 135.398 83.247 102.586 115.389 111.333 134.548 C 124.553 157.359 149.105 138.41 150.296 138.022 C 151.347 137.909 150.19 138.344 150.933 137.901 C 151.066 119.266 150.931 75.876 150.933 65.582 Z" style="fill: rgb(56,139,44);" transform="matrix(0, -1, 1, 0, 24.755199, 236.111095)" />
+          <path id="path-3" d="M 126.168 170.522 C 110.633 152.858 77.821 120.716 86.568 101.556 C 99.788 78.746 124.34 97.694 125.531 98.083 C 126.582 98.196 125.426 97.76 126.168 98.204 C 126.301 116.839 126.166 160.229 126.168 170.522 Z" style="fill: url(#gradient-2-0);" transform="matrix(-1, 0, 0, -1, 211.336304, 260.8526)" />
+          <path id="path-4" d="M 85.346 90.351 C 69.811 108.016 37 140.157 45.746 159.317 C 58.966 182.127 83.519 163.179 84.709 162.79 C 85.76 162.677 84.604 163.113 85.346 162.669 C 85.48 144.034 85.344 100.644 85.346 90.351 Z" style="fill: rgb(57,134,170);" />
+          <path id="path-5" d="M 60.811 145.77 C 45.276 128.105 12.464 95.963 21.211 76.803 C 34.431 53.993 58.984 72.942 60.174 73.33 C 61.225 73.443 60.069 73.008 60.811 73.451 C 60.945 92.086 60.809 135.476 60.811 145.77 Z" style="fill: rgb(69,144,138);" transform="matrix(0, -1, 1, 0, -65.362562, 145.9853)" />
+          <path id="path-6" d="M 60.83 24.745 C 45.295 42.41 12.484 74.552 21.23 93.711 C 34.45 116.522 59.003 97.573 60.193 97.185 C 61.244 97.072 60.088 97.507 60.83 97.064 C 60.964 78.429 60.828 35.039 60.83 24.745 Z" style="fill: rgb(54,130,97);" transform="matrix(0, 1, -1, 0, 105.171453, 24.510435)" />
+          <path id="path-7" d="M 85.346 80.427 C 69.811 62.762 37 30.62 45.746 11.46 C 58.966 -11.35 83.519 7.599 84.709 7.987 C 85.76 8.1 84.604 7.665 85.346 8.108 C 85.48 26.743 85.344 70.133 85.346 80.427 Z" style="fill: rgb(69,154,89);" />
+          <path id="path-8" d="M 126.167 0.214 C 110.632 17.879 77.82 50.021 86.567 69.181 C 99.787 91.991 124.34 73.042 125.53 72.654 C 126.581 72.541 125.425 72.976 126.167 72.533 C 126.301 53.898 126.165 10.508 126.167 0.214 Z" style="fill: rgb(56,139,44);" transform="matrix(-1, 0, 0, -1, 211.33477, 80.620139)" />
+          </g>
+          </g>
+          </svg>
+        <div class="col-xs-12">
+          <p>Soon available</p>
+          <p class="concept-title">Audiovanish</p>
+          <p class="concept-description">In real-time the fastest way to keep up-to-date with new music releases.</p>
+          <a target="_blank" href="https://audiovanish.com/en/showcase/" class="more-link">Soon available</a>
+        </div>
+      </div>
+    </aside>
+  </section>
+  <footer class="footer">
 <div class="media_buttons" id="buttons"></div>
 <div class="misyst"><a href="https://www.misyst.com/html/privacy.html" target="_blank">Privacy Policy</a> | <a href="javascript:cc.showSettings(0);">Cookie settings</a></div>
+<div class="misyst_copyright">Copyright © 1998<span id="CurrentYear"></span>, <img src="img/Misyst_small-grey_2.png" class="misyst_icon" height="16" width="16">Misyst. All Rights Reserved.</div>
+  </footer>
+</div>
 <script src="js/cookieconsent.js" defer></script>
 <script src="js/app.js" defer></script>
-<div class="misyst_copyright">Copyright © 1998<span id="CurrentYear"></span>, <img src="img/Misyst_small-grey_2.png" class="misyst_icon" height="16" width="16">Misyst. All Rights Reserved.</div>
 <script src="js/three.min.js"></script>
 <script src="js/Tween.js"></script>
 <script src="js/Butterfly.js"></script>
