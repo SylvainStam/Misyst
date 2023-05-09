@@ -90,7 +90,7 @@ fill:rgb(80, 84, 90);
 .logo-slogan {
   margin-top: 40px;
   font-family: Archivo, Arial, Helvetica, sans-serif;
-  font-size:23.4px;
+  font-size:23.2px;
   fill:rgb(144, 152, 161);
   }
 
@@ -290,7 +290,6 @@ height:30px
     font-family: Bauhaus, Archivo, Arial, Helvetica, sans-serif;
     font-size:28px;
     font-weight: bold;
-    letter-spacing: 1px;
     text-shadow: 0.7px 0.9px 1px rgb(181, 232, 255);
   }
   .concept-description {
