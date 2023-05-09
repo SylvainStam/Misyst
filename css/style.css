@@ -293,13 +293,9 @@ height:30px
     text-shadow: 0.7px 0.9px 1px rgb(181, 232, 255);
   }
   .concept-description {
-    color: #0c77a5;
+    color: #2f718d;
     font-size:18px;
     font-weight: normal;
-    background: linear-gradient(to top, #0c4b66 0%, #0c77a5 100%);
-    background-clip: content-box;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
   }
   svg, img {
     fill: rgba(0, 0, 0, 0.1);
