@@ -1,16 +1,3 @@
-@font-face {
-  font-family: 'Bauhaus';
-  src: url('../fonts/Bauhaus-Medium.eot');
-  src: url('../fonts/Bauhaus-Medium.eot?#iefix') format('embedded-opentype'),
-      url('../fonts/Bauhaus-Medium.woff2') format('woff2'),
-      url('../fonts/Bauhaus-Medium.woff') format('woff'),
-      url('../fonts/Bauhaus-Medium.ttf') format('truetype'),
-      url('../fonts/Bauhaus-Medium.svg#Bauhaus-Regular') format('svg');
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
-}
-
 html {
 width:100%;
 height:100%;
@@ -286,19 +273,24 @@ height:30px
     background-color: rgba(255, 255, 255, 0.50);
   }
   .concept-title {
-    color: #1a3b4b;
-    font-family: Bauhaus, Archivo, Arial, Helvetica, sans-serif;
+    color: #042d42;
+    font-family: Archivo Narrow, Archivo, Arial, Helvetica, sans-serif;
     font-size:28px;
-    font-weight: bold;
-    text-shadow: 0.7px 0.9px 1px rgb(181, 232, 255);
+    text-shadow: 0.7px 1px 1px rgb(152, 223, 255);
   }
   .concept-description {
-    color: #2d7ba5;
+    color: #2e759b;
     font-size:18px;
     font-weight: normal;
+    text-shadow: 0.5px 0.7px 1px rgb(152, 223, 255);
+  }
+  .logo-misyst-content {
+    top: 130px;
+    right: -39px;
+    fill: rgba(0, 35, 51, 0.1);
   }
   svg, img {
-    fill: rgba(0, 0, 0, 0.1);
+    fill: rgba(127, 200, 231, 0.4);
     position: absolute;
   }
   img {
@@ -307,10 +299,6 @@ height:30px
   .circle {
     top: -330px;
     right: -300px;
-  }
-  .logo-misyst {
-    top: 132px;
-        right: -45px;
   }
   img {
     top: 0;
