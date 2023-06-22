@@ -14,8 +14,8 @@
             light.position.set( 0,5,0 );
             scene.add( light );
 
-            camera = new THREE.PerspectiveCamera(50, window.innerWidth / window.innerHeight, 0.1, 1000);
-            camera.position.set( 0,5,7 );
+            camera = new THREE.PerspectiveCamera(60, window.innerWidth / window.innerHeight, 0.1, 1000);
+            camera.position.set( 0,7,7 );
             camera.lookAt( 0, 0, 0 );
 
             loader = new THREE.GLTFLoader();
