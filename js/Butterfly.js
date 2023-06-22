@@ -15,7 +15,7 @@ var raycaster = new THREE.Raycaster();
 function init() {
   conf = {
     attraction: 0.02,
-    velocityLimit: 1.04,
+    velocityLimit: 0.9,
     move: true,
     followMouse: false,
     shuffle: shuffle
