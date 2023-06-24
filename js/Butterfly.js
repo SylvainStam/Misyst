@@ -15,14 +15,16 @@ var raycaster = new THREE.Raycaster();
 function init() {
   conf = {
     attraction: 0.02,
-    velocityLimit: 0.9,
+    velocityLimit: 1.04,
     move: true,
     followMouse: false,
     shuffle: shuffle
   };
 
   scene = new THREE.Scene();
-  camera = new THREE.PerspectiveCamera(50, window.innerWidth / window.innerHeight, 0.1, 1000);
+  camera = new THREE.PerspectiveCamera(50, window.innerWidth / window.innerHeight, 0.1, 2000);
+            camera.position.set(80, 10, 20);
+            camera.lookAt( 0, 5, 0 );
 
   renderer = new THREE.WebGLRenderer({ alpha: false });
   renderer.setClearColor(0xfafdfd, 1);
@@ -110,7 +112,7 @@ function initScene() {
 window.setInterval(function(){spot()});
   
 function spot() {
-  var div = document.getElementById("marquee");
+  var div = document.getElementById("svg");
   var rect = div.getBoundingClientRect();
 
   var width = div.clientWidth;
