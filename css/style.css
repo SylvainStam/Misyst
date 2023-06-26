@@ -100,10 +100,19 @@ width:18px
 }
 
 .icon-search {
+position:relative;
+vertical-align:sub;
+margin-right:2px;
+filter:invert(100%) sepia(0%) saturate(100%) hue-rotate(182deg) brightness(100%) contrast(100%);
+height:18px;
+width:18px
+}
+
+.icon-mic {
   position:relative;
   vertical-align:sub;
   margin-right:2px;
-  filter:invert(100%) sepia(0%) saturate(100%) hue-rotate(182deg) brightness(100%) contrast(100%);
+  filter:invert(100%) sepia(0%) saturate(0%) hue-rotate(182deg) brightness(0%) contrast(0%);
   height:18px;
   width:18px
   }
@@ -315,7 +324,7 @@ align-items:center
   }
   
   html, button, input, select, textarea {
-    font-family: 'Source Sans Pro', Helvetica, sans-serif;
+    font-family: Archivo, Arial, Helvetica, sans-serif;
     color: #90b0bf;
   }
   h1 {
@@ -326,7 +335,7 @@ align-items:center
     text-align: center;
   }
   .link-container a.more-link {
-    font-family: 'Source Sans Pro', Helvetica, sans-serif;
+    font-family: Archivo, Arial, Helvetica, sans-serif;
     background-color: #90b0bf;
     color: #fff;
     display: inline-block;
@@ -406,7 +415,7 @@ form > .textbox:focus {
   background-color: #FFF;
 }
 
-form > .button {
+form > .button-search {
   outline: 0;
   background: none;
   background-color: rgb(64, 80, 90);
@@ -422,10 +431,28 @@ form > .button {
   text-rendering: auto;
   -webkit-border-radius: 0 4px 4px 0;
   border-radius: 0 4px 4px 0;
-  position: absolute;
+  position:absolute;
   cursor: pointer;
 }
 
-form > .button:hover {
+form > .button-mic {
+  outline: 0;
+  background: none;
+  float: left;
+  margin-left: 42px;
+  height: 42px;
+  width: 42px;
+  text-align: center;
+  line-height: 42px;
+  border: 0;
+  color: #FFF;
+  font-family: Archivo, Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  text-rendering: auto;
+  position:absolute;
+  cursor: pointer;
+}
+
+form > .button-search:hover {
   background-color: rgb(29, 46, 56);
 }
