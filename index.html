@@ -32,6 +32,57 @@ window.addEventListener('load', () => {
         }
     })();
 });
+
+window.addEventListener("DOMContentLoaded", () => {
+    const button = document.getElementById("mic_button");
+    const mic = document.getElementById("mic");
+    const result = document.getElementById("result");
+    const userLang = navigator.language || navigator.userLanguage; 
+
+    var mic_on = "svg/mic.svg";
+    var mic_off = "svg/mic-off.svg";
+
+    let listening = false;
+    const SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
+    if (typeof SpeechRecognition !== "undefined") {
+      
+      const recognition = new SpeechRecognition();
+
+      const stop = () => {
+        recognition.stop();
+        mic.src = mic_on;
+      };
+
+      const start = () => {
+        recognition.start();
+        mic.src = mic_off;
+      };
+
+      recognition.onerror = (event) => {
+        listening ? stop() : start();
+        listening = !listening;
+      };
+
+      const onResult = event => {
+        result.value = "";
+        for (const res of event.results) {
+          result.value = res[0].transcript.split(".").join("");
+        }
+      };
+      recognition.lang = userLang;
+      recognition.continuous = true;
+      recognition.interimResults = true;
+      recognition.addEventListener("speechend", () => {
+        listening ? stop() : start();
+        listening = !listening;
+      });
+      recognition.addEventListener("result", onResult);
+      button.addEventListener("click", event => {
+        listening ? stop() : start();
+        listening = !listening;
+      });
+    }
+  });
 </script>
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Archivo:wght@514&family=Archivo+Narrow:wght@500&display=swap');
@@ -131,9 +182,12 @@ window.addEventListener('load', () => {
     <div class="search">
       <form method="get" action="https://cse.google.com/cse" target="_blank">
         <input type="hidden" value="2849993bd2a58111f" name="cx">
-        <input type="text" class="textbox" placeholder="Typ a search" name="q">
-        <button id="search-button" class="button">
+        <input type="text" class="textbox" placeholder="Typ a search" name="q" id="result">
+        <button type="submit" class="button-search" id="search_button">
           <img src="svg/search.svg" class="icon-search">
+        </button>
+        <button type="button" class="button-mic" id="mic_button">
+          <img src="svg/mic.svg" class="icon-mic" id="mic"> 
         </button>
       </form>
     </div>
