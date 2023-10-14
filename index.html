@@ -205,23 +205,21 @@ window.addEventListener("DOMContentLoaded", () => {
 <script type="text/javascript">
   var userLang = navigator.language || navigator.userLanguage;
 
-  var key="pk_live_51LlBjCJ9P9bOuhUn9VDGtq8VDlHRouNpwuTT55FbnPCpajO094i71N7e1XOHpbmMReOmZ4dwCn4Y9tM29XrJuker00iuDDU663";
+  var pub_key="pk_live_51LlBjCJ9P9bOuhUn9VDGtq8VDlHRouNpwuTT55FbnPCpajO094i71N7e1XOHpbmMReOmZ4dwCn4Y9tM29XrJuker00iuDDU663";
 
-  if (userLang=="fr"){
-    var buy="buy_btn_1O1AK7J9P9bOuhUnhJIkUejX";
-  } else if (userLang=="be" || userLang=="nl"){
-    var buy="buy_btn_1O0jCKJ9P9bOuhUnGkFApIC3";
-  } else if (userLang=="it"){
-    var buy="buy_btn_1O1AX2J9P9bOuhUnLEdH3pLN";
-  } else if (userLang=="es"){
-    var buy="buy_btn_1O1Aj4J9P9bOuhUnVCFyV9og";
-  } else if (userLang=="de"){
-    var buy="buy_btn_1O18TTJ9P9bOuhUnY4rC7cTL";
-  } else {
-    var buy="buy_btn_1O18eNJ9P9bOuhUnMQix4Zto";
+  const buy_btn_=[];
+  buy_btn_['fr']="buy_btn_1O1AK7J9P9bOuhUnhJIkUejX";
+  buy_btn_['be']="buy_btn_1O0jCKJ9P9bOuhUnGkFApIC3";
+  buy_btn_['nl']="buy_btn_1O0jCKJ9P9bOuhUnGkFApIC3";
+  buy_btn_['it']="buy_btn_1O1AX2J9P9bOuhUnLEdH3pLN";
+  buy_btn_['es']="buy_btn_1O1Aj4J9P9bOuhUnVCFyV9og";
+  buy_btn_['de']="buy_btn_1O18TTJ9P9bOuhUnY4rC7cTL";
+
+  if (!buy_btn_[userLang]){
+    buy_btn_[userLang]="buy_btn_1O18eNJ9P9bOuhUnMQix4Zto"; //default $ currency
   }
 
-  document.write('<stripe-buy-button buy-button-id="'+buy+'" publishable-key="'+key+'"></stripe-buy-button>');
+  document.write('<stripe-buy-button buy-button-id="'+buy_btn_[userLang]+'" publishable-key="'+pub_key+'"></stripe-buy-button>');
   </script>
 
     <aside class="responsive-banner second">
