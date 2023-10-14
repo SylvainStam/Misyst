@@ -205,12 +205,14 @@ window.addEventListener("DOMContentLoaded", () => {
 <script type="text/javascript">
   var userLang = navigator.language || navigator.userLanguage;
 
+  var key="pk_live_51LlBjCJ9P9bOuhUn9VDGtq8VDlHRouNpwuTT55FbnPCpajO094i71N7e1XOHpbmMReOmZ4dwCn4Y9tM29XrJuker00iuDDU663";
+
   if (userLang=="nl"){
     var buy="buy_btn_1O0jCKJ9P9bOuhUnGkFApIC3";
-    var key="pk_live_51LlBjCJ9P9bOuhUn9VDGtq8VDlHRouNpwuTT55FbnPCpajO094i71N7e1XOHpbmMReOmZ4dwCn4Y9tM29XrJuker00iuDDU663";
+  if (userLang=="de"){
+    var buy="buy_btn_1O18TTJ9P9bOuhUnY4rC7cTL";
   } else {
     var buy="buy_btn_1NxxT4J9P9bOuhUnDQgcqZhe";
-    var key="pk_live_51LlBjCJ9P9bOuhUn9VDGtq8VDlHRouNpwuTT55FbnPCpajO094i71N7e1XOHpbmMReOmZ4dwCn4Y9tM29XrJuker00iuDDU663";
   }
 
   document.write('<stripe-buy-button buy-button-id="'+buy+'" publishable-key="'+key+'"></stripe-buy-button>');
