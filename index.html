@@ -217,9 +217,9 @@ window.addEventListener("DOMContentLoaded", () => {
   btn_['de']="1O18TTJ9P9bOuhUnY4rC7cTL";
   btn_['en-GB']="1O1BdOJ9P9bOuhUntf1SlKdC";
 
-  btn_[userLang] ? btn_[userLang]="buy_btn_"+btn_[userLang] : btn_[userLang]="buy_btn_"+default_btn;
+  btn_[userLang] ? btn_[userLang]=btn_[userLang] : btn_[userLang]=default_btn;
 
-  document.write('<stripe-buy-button buy-button-id="'+btn_[userLang]+'" publishable-key="'+pub_key+'"></stripe-buy-button>');
+  document.write('<stripe-buy-button buy-button-id="buy_btn_'+btn_[userLang]+'" publishable-key="'+pub_key+'"></stripe-buy-button>');
   </script>
 
     <aside class="responsive-banner second">
