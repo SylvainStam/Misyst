@@ -206,20 +206,23 @@ window.addEventListener("DOMContentLoaded", () => {
   var userLang = navigator.language || navigator.userLanguage;
 
   var pub_key="pk_live_51LlBjCJ9P9bOuhUn9VDGtq8VDlHRouNpwuTT55FbnPCpajO094i71N7e1XOHpbmMReOmZ4dwCn4Y9tM29XrJuker00iuDDU663";
+  var default_btn = "1O18eNJ9P9bOuhUnMQix4Zto"; //default $ currency
 
-  const buy_btn_=[];
-  buy_btn_['fr']="buy_btn_1O1AK7J9P9bOuhUnhJIkUejX";
-  buy_btn_['be']="buy_btn_1O0jCKJ9P9bOuhUnGkFApIC3";
-  buy_btn_['nl']="buy_btn_1O0jCKJ9P9bOuhUnGkFApIC3";
-  buy_btn_['it']="buy_btn_1O1AX2J9P9bOuhUnLEdH3pLN";
-  buy_btn_['es']="buy_btn_1O1Aj4J9P9bOuhUnVCFyV9og";
-  buy_btn_['de']="buy_btn_1O18TTJ9P9bOuhUnY4rC7cTL";
+  const btn_id=[];
+  btn_id['fr']="1O1AK7J9P9bOuhUnhJIkUejX";
+  btn_id['be']="1O0jCKJ9P9bOuhUnGkFApIC3";
+  btn_id['nl']="1O0jCKJ9P9bOuhUnGkFApIC3";
+  btn_id['it']="1O1AX2J9P9bOuhUnLEdH3pLN";
+  btn_id['es']="1O1Aj4J9P9bOuhUnVCFyV9og";
+  btn_id['de']="1O18TTJ9P9bOuhUnY4rC7cTL";
 
-  if (!buy_btn_[userLang]){
-    buy_btn_[userLang]="buy_btn_1O18eNJ9P9bOuhUnMQix4Zto"; //default $ currency
+  if (btn_id[userLang]){
+    btn_id[userLang]="buy_btn_"+btn_id[userLang];
+  } else {
+    btn_id[userLang]="buy_btn_"+default_btn;
   }
 
-  document.write('<stripe-buy-button buy-button-id="'+buy_btn_[userLang]+'" publishable-key="'+pub_key+'"></stripe-buy-button>');
+  document.write('<stripe-buy-button buy-button-id="'+btn_id[userLang]+'" publishable-key="'+pub_key+'"></stripe-buy-button>');
   </script>
 
     <aside class="responsive-banner second">
