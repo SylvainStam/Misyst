@@ -27,7 +27,7 @@ function init() {
             camera.lookAt( 0, 5, 0 );
 
   renderer = new THREE.WebGLRenderer({ alpha: false });
-  renderer.setClearColor(0xfafdfd, 1);
+  renderer.setClearColor(0xFCFCFC, 1);
   renderer.setSize(window.innerWidth, window.innerHeight);
   document.body.appendChild(renderer.domElement);
 
