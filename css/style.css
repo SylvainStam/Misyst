@@ -24,11 +24,12 @@ z-index:-1
 }
 
 .svg-logo {
-width:55%;
-min-width: 367px;
+width:70%;
 height:34%;
 margin-bottom:49px;
 position:static;
+min-width: 367px;
+max-width: 550px;
 }
 
 .marquee {
