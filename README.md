@@ -1,3 +1,3 @@
 # Misyst
 
-Copyright © 2023, Misyst. All Rights Reserved.
+Copyright © 2024, Misyst. All Rights Reserved.
